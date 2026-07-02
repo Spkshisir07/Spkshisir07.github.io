@@ -66,3 +66,14 @@ footer {
 .btn:hover {
     background: #1d4ed8;
 }
+.video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-grid iframe {
+    width: 300px;
+    height: 200px;
+}
