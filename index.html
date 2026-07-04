@@ -3,32 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shisir Sapkota | SPKVlog07</title>
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
 
+</head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <h2>SPKVlog07 🎬</h2>
+    <h2 class="logo">SPKVlog07</h2>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#videos">Videos</a>
         <a href="#contact">Contact</a>
     </nav>
-    <button id="modeToggle">🌙</button>
+    <button id="toggle">🌙</button>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm Shisir Sapkota 👋</h1>
-        <p>Engineering Student | YouTuber | Developer</p>
-        <div class="buttons">
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Shisir Sapkota</span></h1>
+        <p>Engineering Student • Creator • Developer</p>
+
+        <div class="hero-btns">
             <a href="#videos" class="btn">Watch Videos</a>
             <a href="#contact" class="btn outline">Contact Me</a>
         </div>
@@ -36,71 +38,49 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
-    <div class="about-container">
-        <img src="your-photo.jpg" alt="Shisir">
+<section class="about" id="about">
+    <div class="glass">
+        <img src="your-photo.jpg">
         <div>
             <h2>About Me</h2>
             <p>
-                I am a Civil Engineering student from Nepal 🇳🇵.  
-                I create vlogs, explore technology, and build modern websites.
+                Civil Engineering student from Nepal 🇳🇵.  
+                Passionate about vlogging, technology and web development.
             </p>
         </div>
     </div>
 </section>
 
 <!-- VIDEOS -->
-<section id="videos" class="videos">
-    <h2>My Latest Videos 🎥</h2>
+<section class="videos" id="videos">
+    <h2>Latest Videos 🎬</h2>
 
     <div class="video-grid">
 
         <div class="video-card" onclick="openVideo('https://youtu.be/2FZ8WDefBjE')">
             <img src="https://img.youtube.com/vi/2FZ8WDefBjE/maxresdefault.jpg">
-            <h3>My Vlog 1</h3>
+            <div class="overlay">▶ Watch</div>
         </div>
 
-        <div class="video-card" onclick="openVideo('https://youtu.be/mXAo')">
-            <img src="https://img.youtube.com/vi/mXAo/maxresdefault.jpg">
-            <h3>My Vlog 2</h3>
-        </div>
-
-    </div>
-</section>
-
-<!-- RATING -->
-<section class="rating">
-    <h2>Rate My Website ⭐</h2>
-    <div id="stars">
-        ★★★★★
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
+<section class="contact" id="contact">
     <h2>Get In Touch</h2>
 
     <div class="contact-grid">
-        <div class="card">
-            <h3>📞 Call</h3>
-            <p>9813262406</p>
-        </div>
-
-        <div class="card">
-            <h3>📧 Email</h3>
-            <p>shisirsapkota999@gmail.com</p>
-        </div>
-
-        <div class="card">
-            <h3>💬 WhatsApp</h3>
-            <a href="https://wa.me/9779761659890" target="_blank">Message</a>
+        <div class="glass">📞 9813262406</div>
+        <div class="glass">📧 shisirsapkota999@gmail.com</div>
+        <div class="glass">
+            <a href="https://wa.me/9779761659890" target="_blank">💬 WhatsApp</a>
         </div>
     </div>
 </section>
 
 <!-- FLOATING SOCIAL -->
-<div class="floating">
-    <a href="https://wa.me/977-9761659890">💬</a>
+<div class="social-float">
+    <a href="https://wa.me/9779761659890">💬</a>
     <a href="https://youtube.com/@SPKVlog07">▶</a>
     <a href="https://instagram.com/spkshisir07">📸</a>
 </div>
