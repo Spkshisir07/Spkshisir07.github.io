@@ -1,10 +1,9 @@
 function openVideo(link){
-    window.open(link, "_blank");
+window.open(link,"_blank");
 }
 
-// DARK MODE
-const toggle = document.getElementById("modeToggle");
+const toggle = document.getElementById("toggle");
 
-toggle.onclick = () => {
-    document.body.classList.toggle("light");
+toggle.onclick = ()=>{
+document.body.classList.toggle("light");
 };
