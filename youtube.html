@@ -21,16 +21,14 @@
 
   <!-- CHANNEL HEADER -->
   <div class="channel-header">
-    <img src="https://via.placeholder.com/900x250" class="banner"oneclick="openChannel()">
-    <h2> oneclick="openChannel()"
-      style="crusor:pointer;">SPKVlog07</h2>
+    <img src="channel-banner.jpg" class="banner" onclick="openChannel()">
+    <h2 onclick="openChannel()" style="cursor:pointer;">SPKVlog07</h2>
   </div>
 
   <!-- LATEST VIDEO -->
   <h3>Latest Video</h3>
-  <div class="video-card" onclick="openVideo('2FZ8WDefBjE')">
-    <img src="https://img.youtube.com/vi/2FZ8WDefBjE/hqdefault.jpg">
-    <p>My Latest Vlog 🔥</p>
+  <div class="video-card featured" onclick="openVideo('2FZ8WDefBjE')">
+    <img src="https://img.youtube.com/vi/2FZ8WDefBjE/maxresdefault.jpg">
   </div>
 
   <!-- ALL VIDEOS -->
@@ -38,20 +36,30 @@
   <div class="video-grid">
 
     <div class="video-card" onclick="openVideo('2FZ8WDefBjE')">
-      <img src="https://img.youtube.com/vi/2FZ8WDefBjE/hqdefault.jpg">
-      <p>Video 1</p>
+      <img src="https://img.youtube.com/vi/2FZ8WDefBjE/maxresdefault.jpg">
     </div>
 
     <div class="video-card" onclick="openVideo('mXAoXXXXX')">
-      <img src="https://img.youtube.com/vi/mXAoXXXXX/hqdefault.jpg">
-      <p>Video 2</p>
+      <img src="https://img.youtube.com/vi/mXAoXXXXX/maxresdefault.jpg">
     </div>
 
     <div class="video-card" onclick="openVideo('abc123456')">
-      <img src="https://img.youtube.com/vi/abc123456/hqdefault.jpg">
-      <p>Video 3</p>
+      <img src="https://img.youtube.com/vi/abc123456/maxresdefault.jpg">
     </div>
 
   </div>
 
 </section>
+
+<script>
+function openChannel() {
+  window.open("https://www.youtube.com/@SPKVlog07", "_blank");
+}
+
+function openVideo(videoId) {
+  window.open("https://www.youtube.com/watch?v=" + videoId, "_blank");
+}
+</script>
+
+</body>
+</html>
