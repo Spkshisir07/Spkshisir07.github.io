@@ -77,6 +77,73 @@ nav a {
 
 
 
+/* ==========================================================================
+   YOUTUBE SECTION LAYOUT FIXES
+   ========================================================================== */
 
+/* 1. Fix the Profile / Channel Banner Area */
+.profile-container, 
+.channel-banner {
+    max-width: 350px;         /* Prevents the avatar/banner from blowing up */
+    width: 100%;
+    margin: 0 auto 30px auto; /* Centers it and adds space below */
+    display: block;
+}
+
+.profile-container img,
+.channel-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;       /* Keeps your profile picture perfectly circular */
+    object-fit: cover;
+}
+
+/* 2. Fix the Latest Video Banner */
+.latest-video-section {
+    max-width: 650px;         /* Brings the massive text banner down to an attractive size */
+    width: 100%;
+    margin: 0 auto 40px auto; /* Centers it on the page */
+    padding: 0 15px;          /* Mobile padding safety net */
+    box-sizing: border-box;
+}
+
+.latest-video-section img,
+.latest-video-section iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;      /* Gives the thumbnail clean, modern rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow to make it pop */
+}
+
+/* 3. Fix the "My YouTube Videos" Grid */
+.videos-grid-container {
+    max-width: 1050px;        /* Limits the maximum stretch of your video wall */
+    margin: 0 auto;           /* Centers the entire grid */
+    padding: 0 20px 40px 20px;
+}
+
+/* This replaces your current wide layout with a responsive grid */
+.videos-grid-container .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto-fits cards depending on screen size */
+    gap: 24px;                /* Perfect breathing room between video thumbnails */
+}
+
+.video-card {
+    background: #1a1a1a;      /* Optional: Dark subtle background card flavor */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-4px); /* Sleek lift effect when a viewer hovers over a video */
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 
